@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bike.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+bike.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">models</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">interfaces.BikeInterface</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">interfaces.Basic</span><span class="s0">;</span>
+<span class="s0">public class </span><span class="s1">bike </span><span class="s0">extends </span><span class="s1">BasicData </span><span class="s0">implements </span><span class="s1">Basic</span><span class="s0">, </span><span class="s1">BikeInterface {</span>
+    <span class="s0">private </span><span class="s1">String type</span><span class="s0">;</span>
+    <span class="s0">public </span><span class="s1">String getType() {</span>
+        <span class="s0">return this</span><span class="s1">.type</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">setType(String type) {</span>
+        <span class="s0">this</span><span class="s1">.type = type</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public </span><span class="s1">String[] bikeData(){</span>
+        <span class="s0">return new </span><span class="s1">String[]{</span>
+                <span class="s2">&quot;type: &quot; </span><span class="s1">+ </span><span class="s0">this</span><span class="s1">.getType()</span><span class="s0">,</span>
+                <span class="s2">&quot;model: &quot; </span><span class="s1">+ </span><span class="s0">this</span><span class="s1">.getModel()</span><span class="s0">,</span>
+                <span class="s2">&quot;year: &quot; </span><span class="s1">+ </span><span class="s0">this</span><span class="s1">.getYear()</span><span class="s0">,</span>
+        <span class="s1">}</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s1">@Override</span>
+    <span class="s0">public void </span><span class="s1">welcome(String opt){</span>
+        <span class="s1">System.out.println(HELLO + opt)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
